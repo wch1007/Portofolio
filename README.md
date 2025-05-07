@@ -1,77 +1,47 @@
-# Chenghao Wang (Caelan) - Portfolio Website
+# Chenghao Wang - Portfolio
 
-A personal portfolio website built with Streamlit to showcase my education, skills, projects, and experience.
+This is my personal portfolio website showcasing my projects, skills, and experience.
+
+## Overview
+
+This portfolio is built using Streamlit and Python, featuring a clean and modern UI design. It includes:
+
+- **Homepage**: Introduction and overview of my skills and experience
+- **Projects**: Detailed showcases of my work in robotics, research, software development, and data science
+- **Resume**: My professional background and achievements
+- **Contact**: Ways to get in touch with me
 
 ## Features
 
-- Clean, responsive UI design
-- Multiple sections: Home, Projects, Resume, Contact
-- Interactive elements and modern styling
-- Professional presentation of educational background, skills, and work experience
-- Project showcase with descriptions and images
-- Contact form for potential employers or collaborators
+- Responsive layout for various screen sizes
+- Interactive project browsing with detailed descriptions
+- Categorized project sections with easy navigation
+- Modern UI with consistent styling
 
-## Prerequisites
+## Technologies Used
 
-- Python 3.7+
-- pip (Python package installer)
+- Python
+- Streamlit
+- HTML/CSS (for custom styling)
+- JavaScript (for smooth scrolling and interactive elements)
 
-## Installation
+## Local Development
 
-1. Clone this repository:
-
-```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
-```
-
-2. Create a virtual environment (optional but recommended):
-
-```bash
-# On Windows
-python -m venv venv
-venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-```
-
-3. Install the required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Application
-
-To launch the portfolio website:
-
-```bash
-streamlit run app.py
-```
-
-The application will start and automatically open in your default web browser. If it doesn't open automatically, you can access it at [http://localhost:8501](http://localhost:8501).
-
-## Customization
-
-- To update personal information, edit the relevant sections in `app.py`
-- To add new projects, modify the `projects_page()` function in `app.py`
-- To change styling, modify the CSS in the `local_css()` function
-- To add profile images or project images, place them in the `assets` directory and update the image paths in the code
+1. Clone this repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the application: `streamlit run app.py`
 
 ## Deployment
 
-This Streamlit app can be deployed on platforms like:
+This portfolio is deployed using Streamlit Cloud and can be accessed at [chenghao-wang-portfolio.com](https://chenghao-wang-portfolio.com).
 
-- [Streamlit Cloud](https://streamlit.io/cloud)
-- [Heroku](https://heroku.com)
-- [Render](https://render.com)
+## Contact
 
-## License
+Feel free to reach out for collaboration or opportunities: 
+- Email: [chenghao.wang@example.com](mailto:chenghao.wang@example.com)
+- LinkedIn: [linkedin.com/in/chenghaowang](https://linkedin.com/in/chenghaowang)
+- GitHub: [github.com/wch1007](https://github.com/wch1007)
 
-MIT
+---
 
-## Author
-
-Chenghao Wang (Caelan) 
+© 2025 Chenghao Wang. All Rights Reserved. 
