@@ -60,7 +60,7 @@ def local_css():
             border-radius: 15px;
             font-size: 0.85rem;
             color: #1E3A8A;
-            display: inline-block;
+            display: inline-flex;
             margin-right: 4px;
             margin-bottom: 4px;
             white-space: nowrap;
@@ -258,27 +258,27 @@ with col2:
     st.markdown('<h2 class="section-header">Technical Skills</h2>', unsafe_allow_html=True)
     
     st.markdown("**Coding**")
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+    st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
     for skill in ["Python", "C++", "R"]:
-        st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown("**Software**")
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+    st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
     for skill in ["MS Office", "Photoshop", "Premiere", "InDesign", "Figma", "Arduino", "Rhino", "Fusion 360", "AutoCAD", "Flutter", "Overleaf"]:
-        st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown("**Systems & Tools**")
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+    st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
     for skill in ["Ubuntu", "Windows", "Linux", "Cloud Servers", "Command-line scripting", "ROS2"]:
-        st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown("**Product Development**")
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+    st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
     for skill in ["PRD", "Project Planning", "PMF Analysis"]:
-        st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     # Awards section
@@ -311,7 +311,7 @@ with col2:
     
     # Interests
     st.markdown('<h2 class="section-header">Interests</h2>', unsafe_allow_html=True)
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+    st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
     for interest in ["Product Research", "Ultimate Frisbee", "Tennis", "Basketball", "Table Tennis", "Swimming", "Fitness", "Strategic Board Games", "Puzzles"]:
-        st.markdown(f'<span class="skill-tag">{interest}</span>', unsafe_allow_html=True)
+        st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{interest}</span>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
