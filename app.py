@@ -77,14 +77,21 @@ def local_css():
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 4px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            max-width: 100%;
         }
         .skill-tag {
             background-color: #E2E8F0;
-            padding: 5px 10px;
+            padding: 4px 8px;
             border-radius: 15px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #1E3A8A;
+            display: inline-block;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            white-space: nowrap;
         }
         .project-card {
             border-radius: 10px;
@@ -122,9 +129,9 @@ def main():
     with col2:
         st.markdown('<div class="profile-container">', unsafe_allow_html=True)
         # Using a placeholder image
-        st.markdown('<img src="https://avatars.githubusercontent.com/u/60761544" class="profile-img">', unsafe_allow_html=True)
+        st.markdown('<img src="https://raw.githubusercontent.com/wch1007/Portofolio/master/assets/Images/portrait.jpg" class="profile-img">', unsafe_allow_html=True)
         st.markdown('<h1 class="name-header">Chenghao Wang (Caelan)</h1>', unsafe_allow_html=True)
-        st.markdown('<p class="subtitle">Robotics & Technology Innovation Graduate Student</p>', unsafe_allow_html=True)
+        st.markdown('<p class="subtitle">Product Enthusiast from Tsinghua University & University of Washington</p>', unsafe_allow_html=True)
         st.markdown('<p class="contact-info">📍 Bellevue, WA; Beijing, China | 📞 (+1) 425-436-4595, (+86) 185-0128-4401 | ✉️ wch1007@uw.edu, wangch23@mails.tsinghua.edu.cn</p>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     
@@ -173,7 +180,7 @@ def main():
     # Skills section
     st.markdown('<h2 class="section-header">Technical Skills</h2>', unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.markdown("**Coding**")
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
@@ -181,19 +188,21 @@ def main():
             st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
         
+    with col2:
         st.markdown("**Software**")
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         for skill in ["MS Office", "Photoshop", "Premiere", "InDesign", "Figma", "Arduino", "Rhino", "Fusion 360", "AutoCAD", "Flutter", "Overleaf"]:
             st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     
-    with col2:
+    with col3:
         st.markdown("**Systems & Tools**")
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         for skill in ["Ubuntu", "Windows", "Linux", "Cloud Servers", "Command-line scripting", "ROS2"]:
             st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
-        
+    
+    with col4:
         st.markdown("**Product Development**")
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         for skill in ["PRD", "Project Planning Documentation", "PMF Analysis"]:
@@ -218,14 +227,15 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
     
     # Personal section
-    st.markdown('<h2 class="section-header">Personal Achievements</h2>', unsafe_allow_html=True)
-    col1, col2 = st.columns(2)
+    st.markdown('<h2 class="section-header">Other Information</h2>', unsafe_allow_html=True)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown("**Languages**")
         st.markdown("- Mandarin (Native)")
         st.markdown("- English (TOEFL: 111, GRE: 326)")
         st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown('<div class="card">', unsafe_allow_html=True)
     
     with col2:
         st.markdown('<div class="card">', unsafe_allow_html=True)
@@ -235,13 +245,14 @@ def main():
         st.markdown("- Cycling: Beijing to Zhangjiakou (400km) in 2020, around Hainan island (1080km) in 2024")
         st.markdown('</div>', unsafe_allow_html=True)
     
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    st.markdown("**Hobbies & Interests**")
-    st.markdown('<div class="skills-container">', unsafe_allow_html=True)
-    for hobby in ["Product Research", "Ultimate Frisbee", "Tennis", "Basketball", "Table Tennis", "Swimming", "Fitness", "Strategic Board Games", "Puzzles"]:
-        st.markdown(f'<span class="skill-tag">{hobby}</span>', unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
+    with col3:
+        st.markdown('<div class="card">', unsafe_allow_html=True)
+        st.markdown("**Hobbies & Interests**")
+        st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+        for hobby in ["Product Research", "Ultimate Frisbee", "Tennis", "Basketball", "Table Tennis", "Swimming", "Fitness", "Strategic Board Games", "Puzzles"]:
+            st.markdown(f'<span class="skill-tag">{hobby}</span>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
