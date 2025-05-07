@@ -56,19 +56,22 @@ def local_css():
         }
         .skill-tag {
             background-color: #E2E8F0;
-            padding: 5px 10px;
+            padding: 4px 8px;
             border-radius: 15px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #1E3A8A;
             display: inline-block;
-            margin-right: 5px;
-            margin-bottom: 5px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            white-space: nowrap;
         }
         .skills-container {
-            margin-top: 15px;
+            margin-top: 8px;
+            margin-bottom: 15px;
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 4px;
+            max-width: 100%;
         }
         .download-button {
             margin-top: 2rem;
