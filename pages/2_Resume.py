@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
+import requests
 
 # Page configuration
 st.set_page_config(
@@ -104,14 +105,40 @@ local_css()
 st.markdown('<h1 class="section-header">Resume</h1>', unsafe_allow_html=True)
 st.write("My professional experience, education, and skills at a glance.")
 
-# Download button
+# Download buttons
 st.markdown('<div class="download-button">', unsafe_allow_html=True)
+
+# Define functions to download CV files from GitHub
+def get_pdf_from_github(github_url):
+    # Convert GitHub HTML URL to raw URL
+    raw_url = github_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+    response = requests.get(raw_url)
+    return response.content
+
+# English CV download button
+english_cv_github_url = "https://github.com/wch1007/Portofolio/blob/master/assets/Resume/English%20CV.pdf"
+english_cv_data = get_pdf_from_github(english_cv_github_url)
+
 st.download_button(
-    label="📄 Download Resume PDF",
-    data=b"This would be a PDF file in a real implementation",
-    file_name="Chenghao_Wang_Resume.pdf",
-    mime="application/pdf"
+    label="📄 Download English Resume",
+    data=english_cv_data,
+    file_name="Chenghao_Wang_Resume_English.pdf",
+    mime="application/pdf",
+    key="english_cv"
 )
+
+# Chinese CV download button
+chinese_cv_github_url = "https://github.com/wch1007/Portofolio/blob/master/assets/Resume/Chinese%20CV.pdf"
+chinese_cv_data = get_pdf_from_github(chinese_cv_github_url)
+
+st.download_button(
+    label="📄 下载中文简历",
+    data=chinese_cv_data,
+    file_name="王城昊简历.pdf",
+    mime="application/pdf",
+    key="chinese_cv"
+)
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Layout into two columns
