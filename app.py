@@ -180,34 +180,35 @@ def main():
     # Skills section
     st.markdown('<h2 class="section-header">Technical Skills</h2>', unsafe_allow_html=True)
     
-    col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        st.markdown("**Coding**")
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for skill in ["Python", "C++", "R"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
-        
-    with col2:
-        st.markdown("**Software**")
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for skill in ["MS Office", "Photoshop", "Premiere", "InDesign", "Figma", "Arduino", "Rhino", "Fusion 360", "AutoCAD", "Flutter", "Overleaf"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("**Coding**")
+    skills = ["Python", "C++", "R"]
+    skill_cols = st.columns(len(skills))  # 为每个技能创建一列
+    for i, skill in enumerate(skills):
+        with skill_cols[i]:
+            st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
-    with col3:
-        st.markdown("**Systems & Tools**")
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for skill in ["Ubuntu", "Windows", "Linux", "Cloud Servers", "Command-line scripting", "ROS2"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("**Software**")
+    software_skills = ["MS Office", "Photoshop", "Premiere", "InDesign", "Figma", "Arduino", "Rhino", "Fusion 360", "AutoCAD", "Flutter", "Overleaf"]
+    # 将软件技能分成4列显示
+    cols = st.columns(4)
+    for i, skill in enumerate(software_skills):
+        with cols[i % 4]:  # 循环使用这4列
+            st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
-    with col4:
-        st.markdown("**Product Development**")
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for skill in ["PRD", "Project Planning Documentation", "PMF Analysis"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown("**Systems & Tools**")
+    system_skills = ["Ubuntu", "Windows", "Linux", "Cloud Servers", "Command-line scripting", "ROS2"]
+    # 将系统技能分成3列显示
+    cols = st.columns(3)
+    for i, skill in enumerate(system_skills):
+        with cols[i % 3]:
+            st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
+    
+    st.markdown("**Product Development**")
+    product_skills = ["PRD", "Project Planning Documentation", "PMF Analysis"]
+    cols = st.columns(3)
+    for i, skill in enumerate(product_skills):
+        with cols[i]:
+            st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
     # Entrepreneurial section
     st.markdown('<h2 class="section-header">Entrepreneurial Experience</h2>', unsafe_allow_html=True)
@@ -248,10 +249,14 @@ def main():
     with col3:
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown("**Hobbies & Interests**")
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for hobby in ["Product Research", "Ultimate Frisbee", "Tennis", "Basketball", "Table Tennis", "Swimming", "Fitness", "Strategic Board Games", "Puzzles"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{hobby}</span>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
+        
+        hobbies = ["Product Research", "Ultimate Frisbee", "Tennis", "Basketball", "Table Tennis", "Swimming", "Fitness", "Strategic Board Games", "Puzzles"]
+        # 将爱好分成3列显示
+        hobby_cols = st.columns(3)
+        for i, hobby in enumerate(hobbies):
+            with hobby_cols[i % 3]:
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{hobby}</div>", unsafe_allow_html=True)
+        
         st.markdown('</div>', unsafe_allow_html=True)
 
 if __name__ == "__main__":

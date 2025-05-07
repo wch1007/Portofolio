@@ -214,8 +214,13 @@ with project_tabs[0]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Python", "ROS2", "Arduino", "Machine Learning", "Computer Vision", "NLP", "3D Printing", "Fusion 360"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "ROS2", "Arduino", "Machine Learning", "Computer Vision", "NLP", "3D Printing", "Fusion 360"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -257,8 +262,13 @@ with project_tabs[0]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["ROS", "C++", "Arduino", "CAD", "3D Printing", "PCB Design", "Servo Control", "Inverse Kinematics"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["ROS", "C++", "Arduino", "CAD", "3D Printing", "PCB Design", "Servo Control", "Inverse Kinematics"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -298,9 +308,15 @@ with project_tabs[0]:
         - Published navigation algorithms as open-source resources
         """)
         
-        st.markdown('<div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 4px; max-width: 100%;">', unsafe_allow_html=True)
-        for skill in ["ROS", "Python", "Computer Vision", "SLAM", "Sensor Fusion", "Path Planning", "Raspberry Pi", "LiDAR"]:
-            st.markdown(f'<span class="skill-tag" style="display: inline-block; white-space: nowrap; background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-right: 4px; margin-bottom: 4px;">{skill}</span>', unsafe_allow_html=True)
+        st.markdown('<div class="skills-container">', unsafe_allow_html=True)
+        st.markdown("**Technologies used:**")
+        skills = ["ROS", "Python", "Computer Vision", "SLAM", "Sensor Fusion", "Path Planning", "Raspberry Pi", "LiDAR"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -342,8 +358,13 @@ with project_tabs[0]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Drone Design", "Arduino", "Environmental Sensors", "Data Visualization", "Wireless Communication", "Flight Control", "CAD", "3D Printing"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Drone Design", "Arduino", "Environmental Sensors", "Data Visualization", "Wireless Communication", "Flight Control", "CAD", "3D Printing"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -442,8 +463,13 @@ with project_tabs[1]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies and Methods used:**")
-        for skill in ["Python", "R", "Statistical Analysis", "Qualitative Research", "User Studies", "Prototype Development", "Literature Review"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "R", "Statistical Analysis", "Qualitative Research", "User Studies", "Prototype Development", "Literature Review"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -485,8 +511,13 @@ with project_tabs[1]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies and Methods used:**")
-        for skill in ["PyTorch", "TensorFlow", "Computer Vision", "Deep Learning", "Data Collection", "Real-time Processing", "Edge AI", "Model Optimization"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["PyTorch", "TensorFlow", "Computer Vision", "Deep Learning", "Data Collection", "Real-time Processing", "Edge AI", "Model Optimization"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -527,8 +558,13 @@ with project_tabs[1]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies and Methods used:**")
-        for skill in ["Unity3D", "C#", "VR Development", "Physics Simulation", "Robot Simulation", "Domain Randomization", "Reinforcement Learning", "Sim-to-Real Transfer"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Unity3D", "C#", "VR Development", "Physics Simulation", "Robot Simulation", "Domain Randomization", "Reinforcement Learning", "Sim-to-Real Transfer"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -569,8 +605,13 @@ with project_tabs[1]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies and Methods used:**")
-        for skill in ["Python", "TensorFlow", "Generative Models", "CAD Integration", "Constraint Programming", "User Interface Design", "Space Syntax Analysis", "Architecture Software"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "TensorFlow", "Generative Models", "CAD Integration", "Constraint Programming", "User Interface Design", "Space Syntax Analysis", "Architecture Software"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -669,8 +710,13 @@ with project_tabs[2]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Python", "IoT", "Raspberry Pi", "Flutter", "Mobile App Development", "API Integration", "Voice Recognition"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "IoT", "Raspberry Pi", "Flutter", "Mobile App Development", "API Integration", "Voice Recognition"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -712,8 +758,13 @@ with project_tabs[2]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Flutter", "Dart", "Firebase", "Bluetooth LE", "TensorFlow Lite", "SQLite", "UI/UX Design", "RESTful APIs"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Flutter", "Dart", "Firebase", "Bluetooth LE", "TensorFlow Lite", "SQLite", "UI/UX Design", "RESTful APIs"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -755,8 +806,13 @@ with project_tabs[2]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["React", "Node.js", "MongoDB", "Docker", "WebSockets", "Authentication", "Code Sandbox", "D3.js"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["React", "Node.js", "MongoDB", "Docker", "WebSockets", "Authentication", "Code Sandbox", "D3.js"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -798,8 +854,13 @@ with project_tabs[2]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Unity3D", "ARCore", "ARKit", "Computer Vision", "SLAM", "C#", "Mobile Development", "UX Design"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Unity3D", "ARCore", "ARKit", "Computer Vision", "SLAM", "C#", "Mobile Development", "UX Design"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
@@ -898,8 +959,13 @@ with project_tabs[3]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Python", "Streamlit", "Pandas", "Plotly", "Data Analysis", "GeoPandas", "Statistical Modeling"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "Streamlit", "Pandas", "Plotly", "Data Analysis", "GeoPandas", "Statistical Modeling"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -941,8 +1007,13 @@ with project_tabs[3]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies and Methods used:**")
-        for skill in ["Python", "NLTK", "spaCy", "Transformers", "Topic Modeling", "Network Analysis", "Web Scraping", "Django"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "NLTK", "spaCy", "Transformers", "Topic Modeling", "Network Analysis", "Web Scraping", "Django"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -984,8 +1055,13 @@ with project_tabs[3]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Python", "Scikit-learn", "Time Series Analysis", "Feature Engineering", "Ensemble Methods", "IoT Sensors", "Signal Processing", "Database Design"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "Scikit-learn", "Time Series Analysis", "Feature Engineering", "Ensemble Methods", "IoT Sensors", "Signal Processing", "Database Design"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
@@ -1027,8 +1103,13 @@ with project_tabs[3]:
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        for skill in ["Python", "OpenCV", "TensorFlow", "Image Processing", "Transfer Learning", "CAD Integration", "Spatial Analysis", "Database Management"]:
-            st.markdown(f'<span class="skill-tag">{skill}</span>', unsafe_allow_html=True)
+        skills = ["Python", "OpenCV", "TensorFlow", "Image Processing", "Transfer Learning", "CAD Integration", "Spatial Analysis", "Database Management"]
+        
+        # 将技能分成多列显示
+        cols = st.columns(4)  # 创建4列
+        for i, skill in enumerate(skills):
+            with cols[i % 4]:  # 循环使用这4列
+                st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
