@@ -132,7 +132,10 @@ def main():
         st.markdown('<img src="https://raw.githubusercontent.com/wch1007/Portofolio/master/assets/Images/portrait.jpg" class="profile-img">', unsafe_allow_html=True)
         st.markdown('<h1 class="name-header">Chenghao Wang (Caelan)</h1>', unsafe_allow_html=True)
         st.markdown('<p class="subtitle">Product Enthusiast from Tsinghua University & University of Washington</p>', unsafe_allow_html=True)
-        st.markdown('<p class="contact-info">📍 Bellevue, WA; Beijing, China | 📞 (+1) 425-436-4595, (+86) 185-0128-4401 | ✉️ wch1007@uw.edu, wangch23@mails.tsinghua.edu.cn</p>', unsafe_allow_html=True)
+        st.markdown('<p class="contact-info">📍 Bellevue, WA; Beijing, China | 📞 (+1) 425-436-4595, (+86) 185-0128-4401 | ✉️ wch1007@uw.edu / 18501284401@163.com</p>', unsafe_allow_html=True)
+        st.markdown('<div class="social-links">', unsafe_allow_html=True)
+        st.markdown('<a href="https://www.linkedin.com/in/chenghao-wang-caelen" class="social-icon">LinkedIn</a>', unsafe_allow_html=True)
+        st.markdown('<span class="social-icon">WeChat: wch18501284401</span>', unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
     
     # About me section
@@ -156,13 +159,13 @@ def main():
         st.markdown("**University of Washington**")
         st.markdown("*M.S.T.I in Robotics (Expected)*")
         st.markdown("September 2024 - March 2026")
-        st.markdown("**Courses:** Machine Learning & Signal Processing, Robotics Lab, Fabrication and Physical Prototyping, Sensors and circuits, User Research, Design Thinking, Technology Business Strategy")
+        st.markdown("**Courses:** Machine Learning & Signal Processing, Robotics Lab, Fabrication and Physical Prototyping, Sensors and circuits, User Research, Design Thinking, Technology Business Strategy, Programming for User Interface")
         st.markdown('</div>', unsafe_allow_html=True)
     
     with col2:
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown("**Tsinghua University**")
-        st.markdown("*M.Sc in Data Science* | GPA: 3.97/4.0 (Top 10%)")
+        st.markdown("*M.Sc in Data Science* | GPA: 3.97/4.0 (Top 2)")
         st.markdown("September 2023 - June 2024")
         st.markdown("**Achievements:** Pervasive HCI Lab; first author of an LBR paper at HRI'2024 conference; GIX Academy 1st Place Scholarship")
         st.markdown("**Courses:** Statistical Machine Learning, New Venture Creation, Computational Intelligence and Robotics, HCI Technology, Innovation Entrepreneurship Practice, Strategy and Management of Design, Pervasive Computing")
@@ -182,30 +185,30 @@ def main():
     
     st.markdown("**Coding**")
     skills = ["Python", "C++", "R"]
-    skill_cols = st.columns(len(skills))  # 为每个技能创建一列
+    cols = st.columns(5)
     for i, skill in enumerate(skills):
-        with skill_cols[i]:
+        with cols[i % 5]:
             st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
     st.markdown("**Software**")
     software_skills = ["MS Office", "Photoshop", "Premiere", "InDesign", "Figma", "Arduino", "Rhino", "Fusion 360", "AutoCAD", "Flutter", "Overleaf"]
-    # 将软件技能分成4列显示
-    cols = st.columns(4)
+    # 将软件技能分成5列显示
+    cols = st.columns(5)
     for i, skill in enumerate(software_skills):
-        with cols[i % 4]:  # 循环使用这4列
+        with cols[i % 5]:  
             st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
     st.markdown("**Systems & Tools**")
     system_skills = ["Ubuntu", "Windows", "Linux", "Cloud Servers", "Command-line scripting", "ROS2"]
-    # 将系统技能分成3列显示
-    cols = st.columns(3)
+    # 将系统技能分成5列显示
+    cols = st.columns(5)
     for i, skill in enumerate(system_skills):
-        with cols[i % 3]:
+        with cols[i % 5]:
             st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)
     
     st.markdown("**Product Development**")
     product_skills = ["PRD", "Project Planning Documentation", "PMF Analysis"]
-    cols = st.columns(3)
+    cols = st.columns(5)
     for i, skill in enumerate(product_skills):
         with cols[i]:
             st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{skill}</div>", unsafe_allow_html=True)

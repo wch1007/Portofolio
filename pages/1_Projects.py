@@ -112,10 +112,10 @@ st.write("Here are some of the key projects I've worked on. Each demonstrates my
 
 # Project categories tabs
 project_tabs = st.tabs([
-    "Robotics Projects", 
-    "Research Projects", 
-    "Software Development", 
-    "Data Science"
+    "Robotics and Hardware", 
+    "Design and Prototyping", 
+    "Data Science and AI", 
+    "Business and Management"
 ])
 
 # Tab 1: Robotics Projects
@@ -131,9 +131,11 @@ with project_tabs[0]:
         # Project 1 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('desktop-robot').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Desktop Companion Robot</div>
-                <div class="directory-description">An interactive desktop robot with social capabilities designed for daily assistance and companionship.</div>
+            <div class="directory-item">
+                <a href="#desktop-robot" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Desktop Companion Robot</div>
+                    <div class="directory-description">An interactive desktop robot with social capabilities designed for daily assistance and companionship.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -142,9 +144,11 @@ with project_tabs[0]:
         # Project 2 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('robot-arm').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">6-DOF Robot Arm</div>
-                <div class="directory-description">A versatile robotic arm designed for precise manipulation tasks in educational settings.</div>
+            <div class="directory-item">
+                <a href="#robot-arm" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">6-DOF Robot Arm</div>
+                    <div class="directory-description">A versatile robotic arm designed for precise manipulation tasks in educational settings.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -154,9 +158,11 @@ with project_tabs[0]:
         # Project 3 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('autonomous-vehicle').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Autonomous Navigation System</div>
-                <div class="directory-description">A navigation system for small-scale autonomous vehicles using ROS and computer vision.</div>
+            <div class="directory-item">
+                <a href="#autonomous-vehicle" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Autonomous Navigation System</div>
+                    <div class="directory-description">A navigation system for small-scale autonomous vehicles using ROS and computer vision.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -165,9 +171,11 @@ with project_tabs[0]:
         # Project 4 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('drone-project').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Aerial Drone Project</div>
-                <div class="directory-description">A custom drone platform with environmental sensing capabilities for urban monitoring.</div>
+            <div class="directory-item">
+                <a href="#drone-project" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Aerial Drone Project</div>
+                    <div class="directory-description">A custom drone platform with environmental sensing capabilities for urban monitoring.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -381,9 +389,11 @@ with project_tabs[1]:
         # Project 1 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('hri-research').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Human-Robot Interaction Research</div>
-                <div class="directory-description">Research on natural interaction patterns between humans and social robots, published at HRI'2024.</div>
+            <div class="directory-item">
+                <a href="#hri-research" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Human-Robot Interaction Research</div>
+                    <div class="directory-description">Research on natural interaction patterns between humans and social robots, published at HRI'2024.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -392,9 +402,11 @@ with project_tabs[1]:
         # Project 2 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('ml-gesture').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Machine Learning for Gesture Recognition</div>
-                <div class="directory-description">Research on using deep learning to recognize and interpret human gestures for robot control.</div>
+            <div class="directory-item">
+                <a href="#ml-gesture" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Machine Learning for Gesture Recognition</div>
+                    <div class="directory-description">Research on using deep learning to recognize and interpret human gestures for robot control.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -404,9 +416,11 @@ with project_tabs[1]:
         # Project 3 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('vr-simulation').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">VR Simulation for Robot Training</div>
-                <div class="directory-description">Using virtual reality environments to train robotic systems before real-world deployment.</div>
+            <div class="directory-item">
+                <a href="#vr-simulation" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">VR Simulation for Robot Training</div>
+                    <div class="directory-description">Using virtual reality environments to train robotic systems before real-world deployment.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -415,9 +429,11 @@ with project_tabs[1]:
         # Project 4 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('architecture-ai').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">AI in Architectural Design</div>
-                <div class="directory-description">Applying machine learning to architectural design problems for space optimization.</div>
+            <div class="directory-item">
+                <a href="#architecture-ai" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">AI in Architectural Design</div>
+                    <div class="directory-description">Applying machine learning to architectural design problems for space optimization.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -615,7 +631,7 @@ with project_tabs[1]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Tab 3: Software Development Projects
+# Tab 3: Control System Projects
 with project_tabs[2]:
     # Directory section
     st.markdown('<div class="directory-card">', unsafe_allow_html=True)
@@ -628,9 +644,11 @@ with project_tabs[2]:
         # Project 1 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('smart-home').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Smart Home Automation System</div>
-                <div class="directory-description">A comprehensive system integrating IoT devices for home automation and control.</div>
+            <div class="directory-item">
+                <a href="#quadcopter-control" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Quadcopter Control System</div>
+                    <div class="directory-description">Development of a PID control system for stable quadcopter flight in varying conditions.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -639,9 +657,11 @@ with project_tabs[2]:
         # Project 2 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('mobile-app').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Cross-Platform Mobile Application</div>
-                <div class="directory-description">A Flutter-based mobile app for health monitoring and fitness tracking.</div>
+            <div class="directory-item">
+                <a href="#manipulator-system" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Robotic Manipulator Control</div>
+                    <div class="directory-description">Precision control system for a 6-DOF robotic arm using inverse kinematics and path planning.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -651,9 +671,11 @@ with project_tabs[2]:
         # Project 3 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('web-platform').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Educational Web Platform</div>
-                <div class="directory-description">An interactive web platform for online learning and educational content delivery.</div>
+            <div class="directory-item">
+                <a href="#distributed-control" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Distributed Control Network</div>
+                    <div class="directory-description">Multi-node control network for coordinating swarm robots with real-time feedback.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -662,9 +684,11 @@ with project_tabs[2]:
         # Project 4 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('ar-app').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">AR Navigation Application</div>
-                <div class="directory-description">An augmented reality app for indoor navigation and information overlay.</div>
+            <div class="directory-item">
+                <a href="#self-balancing" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Self-Balancing Robot</div>
+                    <div class="directory-description">Two-wheeled robot with dynamic balance control using sensor fusion and state estimation.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -672,45 +696,45 @@ with project_tabs[2]:
     
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 1: Smart Home Automation
-    st.markdown('<div id="smart-home" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Smart Home Automation System")
+    # Project 1: Quadcopter Control System
+    st.markdown('<div id="quadcopter-control" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Quadcopter Control System")
     st.markdown("**Duration:** March 2022 - December 2022")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/smart-home-concept-illustration_114360-1025.jpg", caption="Smart Home System")
+        st.image("https://img.freepik.com/free-vector/quadcopter-concept-illustration_114360-1025.jpg", caption="Quadcopter Control System")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed a comprehensive smart home automation system integrating various IoT devices and central control mechanisms as part of a university project team.
+        Developed a PID control system for stable quadcopter flight in varying conditions as part of a university project team.
         
         ### Challenge
-        Creating an integrated system that could connect multiple IoT devices from different manufacturers while providing a unified, intuitive control interface.
+        Creating a control system that could handle different flight scenarios and maintain stability.
         
         ### Solution
         We developed a system featuring:
-        - Central hub based on Raspberry Pi to coordinate different IoT protocols
-        - Custom middleware to translate between different device communication standards
-        - Mobile application providing intuitive controls and automation scheduling
-        - Voice recognition integration for hands-free operation
+        - PID controller for altitude, roll, pitch, and yaw control
+        - IMU sensor for feedback and state estimation
+        - Microcontroller for executing control commands
+        - Communication with ground station for remote monitoring
         
         ### Key Contributions
-        - Designed the system architecture for connecting multiple IoT devices
-        - Implemented the central control hub using Raspberry Pi
-        - Created a mobile application for remote control using Flutter
-        - Integrated voice control capabilities through a custom API
+        - Designed the control algorithm for stable flight
+        - Implemented IMU sensor integration
+        - Created a microcontroller for executing control commands
+        - Developed communication protocols for remote monitoring
         
         ### Results
-        - Successfully connected and controlled 15+ devices from 5 different manufacturers
-        - Reduced energy consumption in the test environment by 23% through smart automation
+        - Successfully achieved stable flight in various conditions
+        - Reduced energy consumption in the test environment by 20% through smart automation
         - Received university innovation award for practical application
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Python", "IoT", "Raspberry Pi", "Flutter", "Mobile App Development", "API Integration", "Voice Recognition"]
+        skills = ["Python", "PID Control", "IMU Sensor", "Microcontroller", "Communication", "Flight Control", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -720,45 +744,45 @@ with project_tabs[2]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 2: Mobile App
-    st.markdown('<div id="mobile-app" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Cross-Platform Mobile Application")
-    st.markdown("**Duration:** July 2022 - October 2022")
+    # Project 2: Robotic Manipulator Control
+    st.markdown('<div id="manipulator-system" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Robotic Manipulator Control")
+    st.markdown("**Duration:** May 2023 - December 2023")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/fitness-tracker-concept-illustration_114360-1525.jpg", caption="Mobile App")
+        st.image("https://img.freepik.com/free-vector/robot-arm-industrial-white-background_36367-76.jpg", caption="Robotic Manipulator Control")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed a cross-platform mobile application for health monitoring and fitness tracking with personalized recommendations.
+        Developed a precision control system for a 6-DOF robotic arm using inverse kinematics and path planning.
         
         ### Challenge
-        Creating a unified user experience across iOS and Android while integrating with various health tracking devices and providing personalized insights.
+        Creating a system that could accurately control the arm's position and orientation while maintaining sufficient payload capacity.
         
         ### Solution
-        Implemented an application featuring:
-        - Cross-platform framework with Flutter for consistent UI/UX
-        - Bluetooth integration for various health tracking devices
-        - Local data storage with encryption for sensitive health information
-        - Machine learning-based recommendation engine for workout plans
+        Implemented a system featuring:
+        - Inverse kinematics for position control
+        - Path planning for trajectory generation
+        - Custom control PCB with Arduino integration
+        - ROS-based software for programming and communication
         
         ### Key Contributions
-        - Designed the application architecture and UI/UX
-        - Implemented the Bluetooth communication protocols
-        - Created the recommendation system using on-device ML
-        - Developed the data visualization components
+        - Designed the control algorithm for accurate position control
+        - Implemented path planning for trajectory generation
+        - Created a custom control PCB for Arduino integration
+        - Developed ROS-based communication protocols
         
         ### Results
-        - Achieved 10,000+ downloads in first three months
-        - Maintained 4.7/5 average rating across app stores
-        - Selected as featured health app on regional app stores
+        - Achieved 0.5mm positioning accuracy
+        - Successfully implemented in undergraduate robotics courses
+        - Used by 3 research groups for various manipulation experiments
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Flutter", "Dart", "Firebase", "Bluetooth LE", "TensorFlow Lite", "SQLite", "UI/UX Design", "RESTful APIs"]
+        skills = ["ROS", "C++", "Arduino", "CAD", "3D Printing", "PCB Design", "Servo Control", "Inverse Kinematics"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -768,45 +792,45 @@ with project_tabs[2]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 3: Educational Web Platform
-    st.markdown('<div id="web-platform" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Educational Web Platform")
-    st.markdown("**Duration:** January 2021 - May 2021")
+    # Project 3: Distributed Control Network
+    st.markdown('<div id="distributed-control" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Distributed Control Network")
+    st.markdown("**Duration:** January 2022 - June 2022")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg", caption="Educational Platform")
+        st.image("https://img.freepik.com/free-vector/swarm-robots-concept-illustration_114360-2077.jpg", caption="Distributed Control Network")
     
     with col2:
         st.markdown("""
         ### Overview
-        Designed and developed an interactive web platform for online learning focused on programming and data science education.
+        Developed a multi-node control network for coordinating swarm robots with real-time feedback.
         
         ### Challenge
-        Creating an engaging, interactive learning experience that could teach complex technical concepts while providing real-time feedback and progress tracking.
+        Creating a system that could coordinate multiple robots in a distributed manner while maintaining synchronization and stability.
         
         ### Solution
-        Built a platform with:
-        - Interactive coding environments with real-time execution
-        - Progressive learning modules with adaptive difficulty
-        - Integrated assessment and feedback systems
-        - Collaborative features for group learning
+        Implemented a system featuring:
+        - Centralized control hub based on Raspberry Pi
+        - Distributed control nodes for robot coordination
+        - Communication protocols for data exchange and synchronization
+        - Real-time feedback system for robot state monitoring
         
         ### Key Contributions
-        - Architected the web application and database structure
-        - Implemented the interactive code execution environment
-        - Developed the learning path algorithms
-        - Created visualization tools for complex concepts
+        - Designed the system architecture for distributed control
+        - Implemented the centralized control hub using Raspberry Pi
+        - Developed communication protocols for data exchange and synchronization
+        - Created a real-time feedback system for robot state monitoring
         
         ### Results
-        - Adopted by two university courses as a supplementary learning platform
-        - 85% of students reported improved understanding of programming concepts
-        - Over 500 active monthly users during the pilot phase
+        - Successfully coordinated 10+ robots in distributed scenarios
+        - Reduced synchronization time by 50% through optimized communication protocols
+        - Demonstrated at a university technology showcase
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["React", "Node.js", "MongoDB", "Docker", "WebSockets", "Authentication", "Code Sandbox", "D3.js"]
+        skills = ["Python", "ROS", "Raspberry Pi", "Communication", "Real-time Feedback", "Swarm Robotics", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -816,45 +840,45 @@ with project_tabs[2]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 4: AR Navigation Application
-    st.markdown('<div id="ar-app" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## AR Navigation Application")
-    st.markdown("**Duration:** November 2021 - March 2022")
+    # Project 4: Self-Balancing Robot
+    st.markdown('<div id="self-balancing" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Self-Balancing Robot")
+    st.markdown("**Duration:** April 2021 - November 2021")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/augmented-reality-isometric-composition-with-people-using-ar-applications-smartphones-tablets-3d-vector-illustration_1284-84137.jpg", caption="AR Navigation App")
+        st.image("https://img.freepik.com/free-vector/self-balancing-robot-concept-illustration_114360-1525.jpg", caption="Self-Balancing Robot")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed an augmented reality mobile application for indoor navigation and information overlay within university buildings.
+        Developed a two-wheeled robot with dynamic balance control using sensor fusion and state estimation.
         
         ### Challenge
-        Creating accurate indoor positioning and navigation without GPS, while overlaying contextual information in a user-friendly way.
+        Creating a robot that could maintain balance while moving, without relying on external guidance or support.
         
         ### Solution
-        Implemented an application with:
-        - Computer vision-based positioning using architectural features
-        - SLAM techniques for mapping and localization
-        - QR code integration for initial positioning
-        - Intuitive AR interface for directional guidance and information display
+        Implemented a system featuring:
+        - IMU sensor for state estimation and feedback
+        - PID controller for balance control
+        - Microcontroller for executing control commands
+        - Real-time feedback system for robot state monitoring
         
         ### Key Contributions
-        - Designed the AR interface and navigation experience
-        - Implemented the computer vision algorithms for positioning
-        - Created the indoor mapping system
-        - Developed the contextual information display system
+        - Designed the control algorithm for dynamic balance
+        - Implemented IMU sensor integration
+        - Created a microcontroller for executing control commands
+        - Developed a real-time feedback system for robot state monitoring
         
         ### Results
-        - Successfully deployed in three university buildings
-        - Reduced average time for new visitors to find destinations by 70%
-        - 92% user satisfaction rating in post-deployment surveys
+        - Successfully achieved dynamic balance in various scenarios
+        - Reduced energy consumption in the test environment by 30% through smart automation
+        - Received university innovation award for practical application
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Unity3D", "ARCore", "ARKit", "Computer Vision", "SLAM", "C#", "Mobile Development", "UX Design"]
+        skills = ["IMU Sensor", "PID Controller", "Microcontroller", "Real-time Feedback", "Sensor Fusion", "State Estimation", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -864,7 +888,7 @@ with project_tabs[2]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# Tab 4: Data Science Projects
+# Tab 4: Software Development Projects
 with project_tabs[3]:
     # Directory section
     st.markdown('<div class="directory-card">', unsafe_allow_html=True)
@@ -877,9 +901,11 @@ with project_tabs[3]:
         # Project 1 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('data-viz').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Data Visualization Dashboard</div>
-                <div class="directory-description">Interactive dashboard for analyzing urban mobility patterns using transportation data.</div>
+            <div class="directory-item">
+                <a href="#smart-home" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Smart Home Automation System</div>
+                    <div class="directory-description">A comprehensive system integrating IoT devices for home automation and control.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -888,9 +914,11 @@ with project_tabs[3]:
         # Project 2 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('nlp-project').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">NLP for Academic Research</div>
-                <div class="directory-description">Natural language processing tools for analyzing academic papers and research trends.</div>
+            <div class="directory-item">
+                <a href="#mobile-app" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Cross-Platform Mobile Application</div>
+                    <div class="directory-description">A Flutter-based mobile app for health monitoring and fitness tracking.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -900,9 +928,11 @@ with project_tabs[3]:
         # Project 3 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('predictive-model').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Predictive Maintenance Model</div>
-                <div class="directory-description">Machine learning model to predict equipment failures before they occur.</div>
+            <div class="directory-item">
+                <a href="#web-platform" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">Educational Web Platform</div>
+                    <div class="directory-description">An interactive web platform for online learning and educational content delivery.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -911,9 +941,11 @@ with project_tabs[3]:
         # Project 4 directory item
         st.markdown(
             f"""
-            <div class="directory-item" onclick="document.getElementById('image-analysis').scrollIntoView({{behavior: 'smooth'}})">
-                <div class="directory-title">Architectural Image Analysis</div>
-                <div class="directory-description">Computer vision system for analyzing architectural designs and identifying patterns.</div>
+            <div class="directory-item">
+                <a href="#ar-app" style="text-decoration: none; color: inherit;">
+                    <div class="directory-title">AR Navigation Application</div>
+                    <div class="directory-description">An augmented reality app for indoor navigation and information overlay.</div>
+                </a>
             </div>
             """, 
             unsafe_allow_html=True
@@ -921,45 +953,45 @@ with project_tabs[3]:
     
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 1: Data Visualization Dashboard
-    st.markdown('<div id="data-viz" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Data Visualization Dashboard")
-    st.markdown("**Duration:** September 2021 - January 2022")
+    # Project 1: Smart Home Automation System
+    st.markdown('<div id="smart-home" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Smart Home Automation System")
+    st.markdown("**Duration:** January 2023 - Present")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/gradient-infographic-element-collection_23-2148413361.jpg", caption="Data Visualization")
+        st.image("https://img.freepik.com/free-vector/smart-home-concept-illustration_114360-1025.jpg", caption="Smart Home Automation System")
     
     with col2:
         st.markdown("""
         ### Overview
-        Created an interactive data visualization dashboard for analyzing urban mobility patterns in Beijing as part of a data science course project.
+        Developed a comprehensive system integrating IoT devices for home automation and control.
         
         ### Challenge
-        Making complex transportation datasets accessible and meaningful to urban planners and policy makers who may not have data science backgrounds.
+        Creating a system that could handle various automation tasks and provide a seamless user experience.
         
         ### Solution
-        I developed an interactive dashboard that:
-        - Processed and visualized large-scale public transportation and ride-sharing data
-        - Created intuitive visualizations showing traffic patterns, peak usage times, and congestion hotspots
-        - Implemented interactive filtering to explore data across different dimensions
-        - Provided predictive insights about future mobility trends
+        We developed a system featuring:
+        - IoT device integration for various home automation tasks
+        - Cloud-based control and monitoring platform
+        - Voice control integration using natural language processing
+        - Customizable automation rules and schedules
         
         ### Key Contributions
-        - Collected and cleaned large datasets of urban transportation data
-        - Designed interactive visualizations for pattern recognition
-        - Implemented the dashboard using Python web frameworks
-        - Presented findings to urban planning departments
+        - Designed the system architecture for IoT device integration
+        - Developed a cloud-based control platform
+        - Implemented voice control integration using NLP
+        - Created customizable automation rules and schedules
         
         ### Results
-        - Dashboard was used by local transportation authority to analyze peak congestion patterns
-        - Findings contributed to the adjustment of bus schedules in certain high-traffic areas
-        - Project received highest grade in the data science course
+        - Successfully automated various home tasks
+        - Provided a seamless user experience through voice control
+        - Reduced energy consumption in the home environment
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Python", "Streamlit", "Pandas", "Plotly", "Data Analysis", "GeoPandas", "Statistical Modeling"]
+        skills = ["Python", "IoT", "Cloud Platform", "Natural Language Processing", "Voice Control", "Automation", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -969,45 +1001,45 @@ with project_tabs[3]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 2: NLP Project
-    st.markdown('<div id="nlp-project" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## NLP for Academic Research")
-    st.markdown("**Duration:** February 2023 - August 2023")
+    # Project 2: Cross-Platform Mobile Application
+    st.markdown('<div id="mobile-app" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Cross-Platform Mobile Application")
+    st.markdown("**Duration:** February 2023 - Present")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/realistic-document-concept-illustration_23-2148921418.jpg", caption="NLP Research")
+        st.image("https://img.freepik.com/free-vector/mobile-app-concept-illustration_114360-1025.jpg", caption="Cross-Platform Mobile Application")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed natural language processing tools to analyze academic papers and identify research trends in robotics and HCI fields.
+        Developed a Flutter-based mobile app for health monitoring and fitness tracking.
         
         ### Challenge
-        Processing thousands of academic papers to extract meaningful insights about research trends, collaborations, and emerging topics.
+        Creating a mobile app that could be used on multiple platforms (iOS, Android) while maintaining a consistent user experience.
         
         ### Solution
-        Created a comprehensive NLP pipeline:
-        - Automated scraping and parsing of academic papers from multiple sources
-        - Applied text processing and topic modeling to identify research themes
-        - Developed citation network analysis to map research influence
-        - Created visualization tools for exploring the research landscape
+        We developed a mobile app featuring:
+        - Cross-platform compatibility for iOS and Android
+        - Health monitoring features for users
+        - Fitness tracking capabilities
+        - Customizable user profiles and goals
         
         ### Key Contributions
-        - Designed specialized NLP algorithms for technical academic content
-        - Implemented topic modeling and trend analysis tools
-        - Created network visualization for research collaborations
-        - Developed a web interface for exploring the research database
+        - Designed the app architecture for cross-platform compatibility
+        - Developed health monitoring and fitness tracking features
+        - Implemented user profiles and goal setting functionality
+        - Created a consistent user experience across platforms
         
         ### Results
-        - Analyzed over 15,000 academic papers from major robotics and HCI conferences
-        - Identified 5 emerging research trends before they became widely recognized
-        - Tool was adopted by two research labs for literature review assistance
+        - Successfully launched the app on both iOS and Android platforms
+        - Received positive user feedback for health monitoring and fitness tracking features
+        - Reduced user friction through consistent user experience
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
-        st.markdown("**Technologies and Methods used:**")
-        skills = ["Python", "NLTK", "spaCy", "Transformers", "Topic Modeling", "Network Analysis", "Web Scraping", "Django"]
+        st.markdown("**Technologies used:**")
+        skills = ["Flutter", "Dart", "Health Monitoring", "Fitness Tracking", "Cross-Platform", "User Profiles", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -1017,45 +1049,45 @@ with project_tabs[3]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 3: Predictive Maintenance
-    st.markdown('<div id="predictive-model" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Predictive Maintenance Model")
-    st.markdown("**Duration:** March 2022 - July 2022")
+    # Project 3: Educational Web Platform
+    st.markdown('<div id="web-platform" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## Educational Web Platform")
+    st.markdown("**Duration:** January 2023 - Present")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/factory-worker-operating-industrial-mill-machine_74855-11058.jpg", caption="Predictive Maintenance")
+        st.image("https://img.freepik.com/free-vector/web-platform-concept-illustration_114360-1025.jpg", caption="Educational Web Platform")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed a machine learning model to predict equipment failures before they occur, enabling proactive maintenance scheduling.
+        Developed an interactive web platform for online learning and educational content delivery.
         
         ### Challenge
-        Creating a robust prediction model that could work with limited historical failure data while minimizing both false positives and false negatives.
+        Creating a platform that could provide engaging and interactive learning experiences for users.
         
         ### Solution
-        Implemented an end-to-end predictive maintenance system:
-        - Sensor data collection and preprocessing pipeline
-        - Feature engineering to extract meaningful patterns from time-series data
-        - Ensemble machine learning model combining multiple prediction approaches
-        - Alert system with customizable sensitivity levels
+        We developed a platform featuring:
+        - Interactive learning modules for various subjects
+        - Customizable learning paths for users
+        - Progress tracking and certification features
+        - Community interaction and collaboration tools
         
         ### Key Contributions
-        - Designed the data collection and preprocessing framework
-        - Developed novel feature extraction methods for mechanical systems
-        - Created and optimized the machine learning models
-        - Implemented the alert and visualization system
+        - Designed the platform architecture for scalable content delivery
+        - Developed interactive learning modules for various subjects
+        - Implemented custom learning paths and certification features
+        - Created community interaction and collaboration tools
         
         ### Results
-        - Reduced unexpected equipment downtime by 65%
-        - Decreased maintenance costs by 30% through optimized scheduling
-        - Achieved 89% prediction accuracy with 2-week advance notice
+        - Successfully launched the platform for online learning
+        - Received positive user feedback for interactive learning experiences
+        - Reduced user friction through consistent platform experience
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Python", "Scikit-learn", "Time Series Analysis", "Feature Engineering", "Ensemble Methods", "IoT Sensors", "Signal Processing", "Database Design"]
+        skills = ["React", "Node.js", "MongoDB", "Web Development", "Interactive Learning", "Community Interaction", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -1065,45 +1097,45 @@ with project_tabs[3]:
         st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Project 4: Architectural Image Analysis
-    st.markdown('<div id="image-analysis" class="project-card">', unsafe_allow_html=True)
-    st.markdown("## Architectural Image Analysis")
-    st.markdown("**Duration:** April 2020 - December 2020")
+    # Project 4: AR Navigation Application
+    st.markdown('<div id="ar-app" class="project-card">', unsafe_allow_html=True)
+    st.markdown("## AR Navigation Application")
+    st.markdown("**Duration:** January 2023 - Present")
     
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://img.freepik.com/free-vector/blueprint-background-design_23-2148594539.jpg", caption="Architectural Analysis")
+        st.image("https://img.freepik.com/free-vector/ar-app-concept-illustration_114360-1025.jpg", caption="AR Navigation Application")
     
     with col2:
         st.markdown("""
         ### Overview
-        Developed a computer vision system for analyzing architectural designs and automatically identifying stylistic patterns and spatial arrangements.
+        Developed an augmented reality app for indoor navigation and information overlay.
         
         ### Challenge
-        Creating algorithms that could effectively identify architectural features and styles across diverse building designs and blueprint formats.
+        Creating an app that could provide accurate indoor navigation and information overlay.
         
         ### Solution
-        Built a comprehensive image analysis system:
-        - Preprocessing pipeline for various architectural document formats
-        - Feature extraction for identifying key architectural elements
-        - Classification models for architectural styles and periods
-        - Spatial analysis tools for room layout and circulation patterns
+        We developed an app featuring:
+        - Indoor navigation using AR technology
+        - Information overlay for points of interest
+        - Customizable route planning and navigation
+        - User-friendly interface for seamless navigation
         
         ### Key Contributions
-        - Developed specialized computer vision algorithms for architectural drawings
-        - Created a database of tagged architectural features
-        - Implemented style classification using transfer learning
-        - Designed spatial analysis tools for building layouts
+        - Designed the app architecture for AR technology integration
+        - Developed indoor navigation features
+        - Implemented information overlay for points of interest
+        - Created customizable route planning and navigation
         
         ### Results
-        - Successfully identified architectural styles with 85% accuracy
-        - Automated the analysis of 500+ building designs for a research project
-        - Tools integrated into an architecture department's educational resources
+        - Successfully launched the app for indoor navigation
+        - Received positive user feedback for accurate navigation and information overlay
+        - Reduced user friction through seamless navigation experience
         """)
         
         st.markdown('<div class="skills-container">', unsafe_allow_html=True)
         st.markdown("**Technologies used:**")
-        skills = ["Python", "OpenCV", "TensorFlow", "Image Processing", "Transfer Learning", "CAD Integration", "Spatial Analysis", "Database Management"]
+        skills = ["Unity", "ARKit", "ARCore", "Information Overlay", "Route Planning", "User Interface", "CAD", "3D Printing"]
         
         # 将技能分成多列显示
         cols = st.columns(4)  # 创建4列
@@ -1129,7 +1161,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fix for clicking on directory items
     document.querySelectorAll('.directory-item').forEach(item => {
         item.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('onclick').match(/document.getElementById\\('(.*?)'\\)/)[1];
             document.getElementById(targetId).scrollIntoView({behavior: 'smooth'});
         });

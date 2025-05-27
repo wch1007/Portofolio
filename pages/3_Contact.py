@@ -112,18 +112,17 @@ with col1:
     st.markdown('<div class="contact-card">', unsafe_allow_html=True)
     st.markdown("### Get in Touch")
     
-    st.markdown('<p class="contact-info">📞 <strong>Phone:</strong> (+1) 425-436-4595</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">✉️ <strong>Email:</strong> wch1007@uw.edu</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info">📞 <strong>Phone:</strong> (+1) 425-436-4595 / (+86) 185-0128-4401</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info">✉️ <strong>Email:</strong> wch1007@uw.edu / 18501284401@163.com</p>', unsafe_allow_html=True)
     st.markdown('<p class="contact-info">🏠 <strong>Address:</strong> 818 132nd NE AVE, Bellevue, WA</p>', unsafe_allow_html=True)
     
     st.markdown("### Connect with Me")
     st.markdown('<div class="social-links">', unsafe_allow_html=True)
-    st.markdown("""
-    <a href="https://linkedin.com" class="social-button">LinkedIn</a>
-    <a href="https://github.com" class="social-button">GitHub</a>
-    <a href="https://twitter.com" class="social-button">Twitter</a>
-    <a href="https://medium.com" class="social-button">Medium</a>
-    """, unsafe_allow_html=True)
+    st.markdown('<a href="https://www.linkedin.com/in/chenghao-wang-caelen" class="social-button">LinkedIn</a>', unsafe_allow_html=True)
+    st.markdown('<span class="social-button">WeChat: wch18501284401</span>', unsafe_allow_html=True)
+    st.markdown('<a href="https://github.com" class="social-button">GitHub</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://twitter.com" class="social-button">Twitter</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://medium.com" class="social-button">Medium</a>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown("### Office Hours")
@@ -177,10 +176,7 @@ faq_expander2 = st.expander("Are you available for freelance or consulting work?
 with faq_expander2:
     st.write("Yes, I'm open to freelance and consulting opportunities, particularly in the areas of robotics, product development, and HCI research. Please contact me with details about your project for further discussion.")
 
-faq_expander3 = st.expander("Do you offer mentoring or tutoring services?")
-with faq_expander3:
-    st.write("I occasionally mentor students and professionals interested in robotics, product development, and technology entrepreneurship. My availability varies depending on my current workload, so please reach out to discuss possibilities.")
 
-faq_expander4 = st.expander("Are you open to relocation for the right opportunity?")
-with faq_expander4:
-    st.write("While I'm currently based in Bellevue, WA, I'm open to relocation for exceptional opportunities, particularly in tech hubs around the United States or internationally. Remote work arrangements are also welcome.")
+faq_expander3 = st.expander("Are you open to relocation for the right opportunity?")
+with faq_expander3:
+    st.write("While I'm currently based in Bellevue, WA, I'm open to relocation for exceptional opportunities, particularly in tech hubs around the United States or in China (Beijing, Shanghai, Guangzhou, Shenzhen). Remote work arrangements are also welcome.")

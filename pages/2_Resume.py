@@ -322,3 +322,11 @@ with col2:
     for i, interest in enumerate(interest_list):
         with interest_cols[i % 3]:
             st.markdown(f"<div style='background-color: #E2E8F0; padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; color: #1E3A8A; margin-bottom: 8px; text-align: center;'>{interest}</div>", unsafe_allow_html=True)
+
+# Add a contact section at the end of the resume page with the new info
+st.markdown('<h2 class="section-header">Contact</h2>', unsafe_allow_html=True)
+st.markdown('''
+- **Email:** wch1007@uw.edu / 18501284401@163.com
+- **LinkedIn:** [www.linkedin.com/in/chenghao-wang-caelen](https://www.linkedin.com/in/chenghao-wang-caelen)
+- **WeChat:** wch18501284401
+''')
