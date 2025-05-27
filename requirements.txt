@@ -1,5 +1,9 @@
+pip>=25.1.1
+setuptools>=70.0.0
+wheel>=0.43.0
+
 streamlit==1.32.0
-pillow==10.1.0
+pillow==9.5.0
 requests==2.31.0
 pandas==2.1.0
 numpy==1.26.0
